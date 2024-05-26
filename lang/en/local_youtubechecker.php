@@ -1,4 +1,4 @@
-$string['pluginname'] = 'YouTube Video Checker';
+$string['pluginname'] = 'YouTube Video Link Checker';
 $string['videourl'] = 'Video URL';
 $string['savechanges'] = 'Save changes';
 $string['delete'] = 'Delete';
@@ -11,5 +11,9 @@ $string['validstatuscodes'] = 'Valid HTTP Status Codes';
 $string['validstatuscodes_desc'] = 'Comma-separated list of HTTP status codes considered valid.';
 $string['apikey'] = 'API Key';
 $string['apikey_desc'] = 'API key for YouTube Data API.';
-$string['privacy:metadata'] = 'The YouTube Video Checker plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The YouTube Video Link Checker plugin does not store any personal data.';
+$string['allvideos'] = 'All Videos';
+$string['validvideos'] = 'Valid Videos';
+$string['invalidvideos'] = 'Invalid Videos';
+$string['filter'] = 'Filter';
 ?>

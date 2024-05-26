@@ -1,10 +1,10 @@
 <?php
-namespace local_youtubechecker\privacy;
+namespace local_linkchecker\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Privacy Subsystem for local_youtubechecker implementing null_provider.
+ * Privacy Subsystem for local_linkchecker implementing null_provider.
  */
 class provider implements \core_privacy\local\metadata\null_provider {
 
@@ -17,3 +17,4 @@ class provider implements \core_privacy\local\metadata\null_provider {
     }
 }
 ?>
+

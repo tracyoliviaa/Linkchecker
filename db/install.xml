@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/linkchecker/db" VERSION="1.0">
+    <TABLE NAME="local_linkchecker_videos">
+        <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+            <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" />
+            <FIELD NAME="videourl" TYPE="text" NOTNULL="true" />
+            <FIELD NAME="status" TYPE="int" LENGTH="2" NOTNULL="true" />
+            <FIELD NAME="videotitle" TYPE="text" NOTNULL="true" />
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+        </KEYS>
+    </TABLE>
+</XMLDB>

@@ -1,0 +1,19 @@
+$string['pluginname'] = 'YouTube Video Link Checker';
+$string['videourl'] = 'Video-URL';
+$string['savechanges'] = 'Änderungen speichern';
+$string['delete'] = 'Löschen';
+$string['edit'] = 'Bearbeiten';
+$string['checkvideos'] = 'Videos prüfen';
+$string['checkvideostask'] = 'YouTube-Links überprüfen';
+$string['checkinterval'] = 'Überprüfungsintervall';
+$string['checkinterval_desc'] = 'Intervall in Stunden, nach dem die Videos überprüft werden sollen.';
+$string['validstatuscodes'] = 'Gültige HTTP-Statuscodes';
+$string['validstatuscodes_desc'] = 'Liste der HTTP-Statuscodes, die als gültig angesehen werden (kommagetrennt).';
+$string['apikey'] = 'API-Schlüssel';
+$string['apikey_desc'] = 'API-Schlüssel für die YouTube-Daten-API.';
+$string['privacy:metadata'] = 'Das YouTube Video Link Checker Plugin speichert keine personenbezogenen Daten.';
+$string['allvideos'] = 'Alle Videos';
+$string['validvideos'] = 'Gültige Videos';
+$string['invalidvideos'] = 'Ungültige Videos';
+$string['filter'] = 'Filtern';
+?>

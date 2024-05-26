@@ -1,8 +1,9 @@
 <?php
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'local_checkyoutube';
-$plugin->version = 2024052400; // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires = 2022041900; // Requires this Moodle version.
-$plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '0.1.0';
+$plugin->component = 'local_linkchecker';
+$plugin->version = 2023052500;
+$plugin->requires = 2021051700;
+$plugin->maturity = MATURITY_STABLE;
+$plugin->release = '1.0.0';
+?>

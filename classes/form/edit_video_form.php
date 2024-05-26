@@ -1,5 +1,5 @@
 <?php
-namespace local_youtubechecker\form;
+namespace local_linkchecker\form;
 
 use moodleform;
 
@@ -10,7 +10,7 @@ class edit_video_form extends moodleform {
         $mform = $this->_form;
 
         // Video URL field
-        $mform->addElement('text', 'videourl', get_string('videourl', 'local_youtubechecker'));
+        $mform->addElement('text', 'videourl', get_string('videourl', 'local_linkchecker'));
         $mform->setType('videourl', PARAM_URL);
         $mform->addRule('videourl', null, 'required', null, 'client');
 
@@ -19,7 +19,7 @@ class edit_video_form extends moodleform {
         $mform->setType('id', PARAM_INT);
 
         // Action buttons
-        $this->add_action_buttons(true, get_string('savechanges', 'local_youtubechecker'));
+        $this->add_action_buttons(true, get_string('savechanges', 'local_linkchecker'));
     }
 }
 ?>

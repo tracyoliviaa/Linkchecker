@@ -1,7 +1,7 @@
 <?php
-namespace local_youtubechecker;
+namespace local_linkchecker;
 
-class youtube_checker {
+class link_checker {
     public function get_all_videos($status = null, $search = '') {
         global $DB;
         $conditions = array();
@@ -18,7 +18,7 @@ class youtube_checker {
             $params[] = "%$search%";
         }
 
-        $sql = 'SELECT * FROM {local_youtubechecker_videos}';
+        $sql = 'SELECT * FROM {local_linkchecker_videos}';
         if (!empty($conditions)) {
             $sql .= ' WHERE ' . implode(' AND ', $conditions);
         }
@@ -28,10 +28,10 @@ class youtube_checker {
 
     public function check_video($url) {
         // Retrieve valid HTTP status codes from settings
-        $validstatuscodes = explode(',', get_config('local_youtubechecker', 'validstatuscodes'));
+        $validstatuscodes = explode(',', get_config('local_linkchecker', 'validstatuscodes'));
 
         // Retrieve API key from settings
-        $apikey = get_config('local_youtubechecker', 'apikey');
+        $apikey = get_config('local_linkchecker', 'apikey');
 
         // Extract video ID from URL
         preg_match('/v=([^&]+)/', $url, $matches);
@@ -59,7 +59,7 @@ class youtube_checker {
 
     public function update_video_status($id, $status) {
         global $DB;
-        $DB->update_record('local_youtubechecker_videos', array('id' => $id, 'status' => $status));
+        $DB->update_record('local_linkchecker_videos', array('id' => $id, 'status' => $status));
     }
 }
 ?>
